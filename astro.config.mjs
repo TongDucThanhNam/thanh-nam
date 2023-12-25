@@ -8,13 +8,13 @@ import lit from "@astrojs/lit";
 export default defineConfig({
     site: 'https://TongDucThanhNam.github.io', // Your website URL https://<username>.github.io
     base: '/thanh-nam/', // Your respository name, e.g. "/my-site"
-    sitemap: false,
+    sitemap: true,
     // Generate sitemap (set to "false" to disable)
     integrations: [sitemap(), mdx(), lit()], // Add renderers to the config
-    // This is for the astro-icon package. You can find more about the package here: https://www.npmjs.com/package/astro-icon
-    vite: {
-        ssr: {
-            external: ["svgo"],
-        },
-    },
+    // // This is for the astro-icon package. You can find more about the package here: https://www.npmjs.com/package/astro-icon
+    // vite: {
+    //     ssr: {
+    //         external: ["svgo"],
+    //     },
+    // },
 });
