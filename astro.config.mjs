@@ -6,8 +6,8 @@ import lit from "@astrojs/lit";
 
 // https://astro.build/config
 export default defineConfig({
-    site: 'https://my-site.dev/',
-    // Your public domain, e.g.: https://my-site.dev/. Used to generate sitemaps and canonical URLs.
+    site: 'https://TongDucThanhNam.github.io', // Your website URL https://<username>.github.io
+    base: '/thanh-nam/', // Your respository name, e.g. "/my-site"
     sitemap: false,
     // Generate sitemap (set to "false" to disable)
     integrations: [sitemap(), mdx(), lit()], // Add renderers to the config

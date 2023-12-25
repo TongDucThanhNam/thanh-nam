@@ -49,3 +49,12 @@ All commands are run from the root of the project, from a terminal:
 ## 👀 Want to learn more?
 
 Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+
+## Deploy on GitHub Pages
+Bạn có thể deploy trên GitHub Pages bằng cách sử dụng github action để tự động build và deploy lên GitHub Pages. 
+- B1: Đưa code lên GitHub
+- B2: Thêm `withastro/action` trong github Action
+- B3: config: 
+  - Deploy `github.io` URL:
+    - Thay đổi `site` và `base` trong file `astro.config.mjs` thành `https://<username>.github.io/<repo-name>`
+    - 
