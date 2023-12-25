@@ -4,7 +4,6 @@
 npm create astro@latest -- --template basics
 ```
 
-
 > 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
 
 ![just-the-basics](https://github.com/withastro/astro/assets/2244813/a0a5533c-a856-4198-8470-2d67b1d7c554)
@@ -27,9 +26,11 @@ Inside of your Astro project, you'll see the following folders and files:
 └── package.json
 ```
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
+Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file
+name.
 
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
+There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact
+components.
 
 Any static assets, like images, can be placed in the `public/` directory.
 
@@ -38,7 +39,7 @@ Any static assets, like images, can be placed in the `public/` directory.
 All commands are run from the root of the project, from a terminal:
 
 | Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
+|:--------------------------|:-------------------------------------------------|
 | `npm install`             | Installs dependencies                            |
 | `npm run dev`             | Starts local dev server at `localhost:4321`      |
 | `npm run build`           | Build your production site to `./dist/`          |
@@ -48,13 +49,16 @@ All commands are run from the root of the project, from a terminal:
 
 ## 👀 Want to learn more?
 
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+Feel free to check [our documentation](https://docs.astro.build) or jump into
+our [Discord server](https://astro.build/chat).
 
 ## Deploy on GitHub Pages
-Bạn có thể deploy trên GitHub Pages bằng cách sử dụng github action để tự động build và deploy lên GitHub Pages. 
+
+Bạn có thể deploy trên GitHub Pages bằng cách sử dụng github action để tự động build và deploy lên GitHub Pages.
+
 - B1: Đưa code lên GitHub
 - B2: Thêm `withastro/action` trong github Action
-- B3: config: 
-  - Deploy `github.io` URL:
-    - Thay đổi `site` và `base` trong file `astro.config.mjs` thành `https://<username>.github.io/<repo-name>`
-    - 
+- B3: config:
+    - Deploy `github.io` URL:
+        - Thay đổi `site` và `base` trong file `astro.config.mjs` thành `https://<username>.github.io/<repo-name>`
+        - 

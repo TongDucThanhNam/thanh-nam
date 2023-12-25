@@ -1,80 +1,35 @@
 export const footerSocials = [
-  {
-    name: 'Twitter',
-    url: 'https://twitter.com/littlesticksdev',
-    icon: "mdi:twitter",
-  },
-  {
-    name: 'Youtube',
-    url: 'https://youtube.com/c/LittleSticks',
-    icon: "mdi:youtube",
-  },
-  {
-    name: 'Github',
-    url: 'https://github.com/littlesticks',
-    icon: "mdi:github",
-  },
-  {
-    name: 'Discord',
-    url: 'https://littlesticks.dev/discord',
-    icon: "ic:baseline-discord",
-  },
+    {
+        name: 'Facebook',
+        url: 'https://www.facebook.com/nguyen.thi.thoa.945/',
+        icon: "mdi:facebook",
+    },
+    {
+        name: 'Youtube',
+        url: '',
+        icon: "mdi:youtube",
+    },
+    // {
+    //     name: 'Zalo',
+    //     url: 'https://zalo.me/0909275945',
+    //     icon: zaloIcon,
+    // },
 ]
 
 export const footerLists = [
-	{
-		title: 'Landing Pages',
-		items: [
-			{
-				title: 'Landing Page 1',
-				slug: '/landing-pages/landing-1',
-			},
-			{
-				title: 'Landing Page 2',
-				slug: '/landing-pages/landing-2',
-			},
-      // {
-			// 	title: 'Landing Page 3',
-			// 	slug: '/landing-pages/landing-3',
-			// },
-		],
-	},
-	{
-		title: 'Company',
-		items: [
-			{
-				title: 'About',
-				slug: '/company/about',
-			},
-			{
-				title: 'Blog',
-				slug: '/blog',
-			},
-			{
-				title: 'Contact',
-				slug: '/company/contact',
-			},
-		],
-	},
-	{
-		title: 'Theme',
-		items: [
-			{
-				title: 'Get Started',
-				slug: '/theme/get-started',
-			},
-			{
-				title: 'Style Guide',
-				slug: '/theme/style-guide',
-			},
-      {
-        title: 'Theme Setup',
-        slug: '/theme/theme-setup',
-      },
-      {
-        title: 'Customizing Odyssey',
-        slug: '/theme/customizing-odyssey',
-      }
-		],
-	},
+    {
+        title: 'Địa chỉ',
+        description: 'Địa chỉ của chúng tôi',
+        items: [
+            {
+                title: 'Địa chỉ: C4/20 đường Phạm Hùng, xã Bình Hưng, huyện Bình Chánh, TP.HCM',
+                slug: '/address',
+            },
+
+            {
+                title: 'Liên hệ: 0909 275 945',
+                slug: '/contact',
+            },
+        ],
+    },
 ];

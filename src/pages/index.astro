@@ -1,127 +1,98 @@
 ---
 import {Icon} from 'astro-icon'
 import {
-	AnnouncementBar,
-	Button,
-	CustomerQuoteSection,
-	ThreeColumnTextSection,
-	YouTubeEmbedSection,
-	StickyTextImageSection,
-	CtaCardSection
+    AnnouncementBar,
+    Button,
+    CustomerQuoteSection,
+    ThreeColumnTextSection,
+    // YouTubeEmbedSection,
+    StickyTextImageSection,
+    CtaCardSection
 } from '@littlesticks/odyssey-theme-components';
 import Layout from '../layouts/Page.astro';
 import TextAndImageHero from '../components/sections/heros/TextAndImageHero.astro';
 
 const seo = {
-	title: 'Landing Page #1 | Astro Odyssey Theme',
-	description: 'Landing Page #1 | Astro Odyssey Theme',
+    title: 'VLXD Thành Nam',
+    description: 'Cửa hàng VLXD Thành Nam',
 };
 ---
 
-<AnnouncementBar text="Read Our Latest Blog Post" href="/blog/posts/remote-work-mental-health/" slot="announcement-bar"/>
-<Layout seo={seo} >
-	<TextAndImageHero reversed>
-		<div slot="text-container">
-			<h1>Don't Reinvent the Wheel</h1>
-			<p>Use Odyssey Theme to jumpstart your company's marketing website.</p>
-		</div>
-		<div slot="btns-container">
-			<Button href="/theme/get-started" customIcon
-			>Get Started <Fragment slot="icon">
-				<Icon name="ic:baseline-chevron-right"/>
-			</Fragment></Button
-			>
-		</div>
-		<picture slot="image-container">
-			<img
-				src="/assets/images/landing-1/landing-hero-1.jpg"
-				alt="Astro Odyssee"
-				id="home-hero-image"
-			/>
-		</picture>
-	</TextAndImageHero>
+<!--<AnnouncementBar text="Read Our Latest Blog Post" href="/blog/posts/remote-work-mental-health/" slot="announcement-bar"/>-->
+<Layout seo={seo}>
+    <TextAndImageHero reversed>
+        <div slot="text-container">
+            <h1>Cửa hàng VLXD Thành Nam </h1>
+            <p>Cửa hàng VLXD Thành Nam chuyên bán các loại vật liệu xây dựng chất lượng.</p>
+        </div>
+        <div slot="btns-container">
+            <Button href="/contact" customIcon
+            >Mua hàng ngay
+                <Fragment slot="icon">
+                    <Icon name="ic:baseline-chevron-right"/>
+                </Fragment>
+            </Button
+            >
+        </div>
+        <picture slot="image-container">
+            <img
+                    src="/assets/images/landing-1/thanhnam.jpg"
+                    alt="Astro Odyssee"
+                    id="home-hero-image"
+            />
+        </picture>
+    </TextAndImageHero>
 
-	<CustomerQuoteSection
-		quoteText="Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, vero nobis? Voluptas assumenda, voluptatibus commodi qui ducimus delectus praesentium maiores, impedit iure labore ratione, ea facilis numquam doloremque aperiam aspernatur."
-		customerName="Happy Customer"
-	/>
+    <CustomerQuoteSection
+            quoteText="Cửa hàng VLXD Thành Nam rất tự hào về việc cung cấp đa dạng các loại vật liệu xây dựng cho khách hàng. Chúng tôi cam kết đem đến những sản phẩm chất lượng nhất với giả cả hợp lý để phục vụ nhu cầu xây dựng của bạn. Với sự đa dạng trong sản phẩm, từ sắt xây dựng, tấm lót sàn xi măng smart board, ván ép, tấm nhựa đến các vật liệu xây dựng khác, chúng tôi cam kết mang đến sự lựa chọn phong phú và đáp ứng mọi nhu cầu xây dựng của bạn. Hãy đến với Cửa hàng VLXD Thành Nam để trải nghiệm sự chuyên nghiệp và chất lượng."
+            customerName="Cửa hàng VLXD Thành Nam"
+    />
 
-	<ThreeColumnTextSection>
-		<div slot="column-1-body">
-			<h2>Why?</h2>
-			<p>
-				Lorem ipsum dolor sit amet consectetur adipisicing elit. Est dolorem
-				tempore odio! Nemo consectetur ipsa aperiam similique maxime maiores
-				consequatur explicabo ut quibusdam fugiat corporis, dignissimos tenetur,
-				mollitia cumque. Velit.
-			</p>
-		</div>
-		<Button slot="column-1-cta">Learn More</Button>
-		<div slot="column-2-body">
-			<h2>How?</h2>
-			<p>
-				Lorem ipsum dolor sit amet consectetur adipisicing elit. Est dolorem
-				tempore odio! Nemo consectetur ipsa aperiam similique maxime maiores
-				consequatur explicabo ut quibusdam fugiat corporis, dignissimos tenetur,
-				mollitia cumque. Velit.
-			</p>
-		</div>
-		<Button slot="column-2-cta" outlined>Learn More</Button>
-		<div slot="column-3-body">
-			<h2>What?</h2>
-			<p>
-				Lorem ipsum dolor sit amet consectetur adipisicing elit. Est dolorem
-				tempore odio! Nemo consectetur ipsa aperiam similique maxime maiores
-				consequatur explicabo ut quibusdam fugiat corporis, dignissimos tenetur,
-				mollitia cumque. Velit.
-			</p>
-		</div>
-		<Button slot="column-3-cta">Learn More</Button>
-	</ThreeColumnTextSection>
+    <ThreeColumnTextSection>
+        <div slot="column-1-body">
+            <h2>Tại sao ?</h2>
+            <p>
+                Chất lượng ưu tiên hàng đầu: Chúng tôi không chỉ cung cấp vật liệu xây dựng, mà còn đặt chất lượng lên
+                hàng đầu. Sản phẩm của chúng tôi đảm bảo về độ bền và tính chất lượng.<br> Dịch vụ chuyên nghiệp: Đội
+                ngũ nhân viên giàu kinh nghiệm và tận tâm sẵn sàng hỗ trợ bạn từ việc lựa chọn sản phẩm đến quá trình
+                mua hàng, mang đến trải nghiệm tốt nhất.
+            </p>
+        </div>
+        <Button slot="column-1-cta">Learn More</Button>
 
-	<YouTubeEmbedSection url="https://www.youtube.com/watch?v=cbYr75_R15M" rounded />
+        <div slot="column-2-body">
+            <h2>Mua hàng ?</h2>
+            <p>
+                Đến cửa hàng: Bạn có thể đến trực tiếp cửa hàng để lựa chọn và mua sản phẩm.<br> Liên hệ trực tuyến:
+                Chúng tôi cung cấp dịch vụ liên hệ trực tuyến qua điện thoại hoặc website để bạn có thể đặt hàng một
+                cách thuận tiện.
+                Giao hàng: Chúng tôi có dịch vụ giao hàng nhanh chóng, đảm bảo sản phẩm đến tay bạn một cách an toàn và
+                kịp thời.
+            </p>
+        </div>
+        <Button slot="column-2-cta">Learn More</Button>
+        <div slot="column-3-body">
+            <h2>Sản phẩm ?</h2>
+            <p>
+                Đa dạng sản phẩm: Chúng tôi cung cấp đa dạng các loại vật liệu xây dựng như sắt xây dựng, tấm lót sàn xi
+                măng smart board, ván ép, tấm nhựa đến các vật liệu xây dựng khác.<br> Giá cả hợp lý: Chúng tôi cam kết
+                đem đến những sản phẩm chất lượng nhất với giá cả hợp lý để phục vụ nhu cầu xây dựng của bạn.
+            </p>
+        </div>
+        <Button slot="column-3-cta">Learn More</Button>
+    </ThreeColumnTextSection>
 
-	<StickyTextImageSection>
-		<div slot="text-container">
-			<h2>Features</h2>
-			<h3>SEO</h3>
-			<p>
-				Lorem ipsum dolor sit amet consectetur adipisicing elit. Est dolorem
-				tempore odio! Nemo consectetur ipsa aperiam similique maxime maiores
-				consequatur explicabo ut quibusdam fugiat corporis, dignissimos tenetur,
-				mollitia cumque. Velit.
-			</p>
-			<h3>Responsive</h3>
-			<p>
-				Lorem ipsum dolor sit amet consectetur adipisicing elit. Est dolorem
-				tempore odio! Nemo consectetur ipsa aperiam similique maxime maiores
-				consequatur explicabo ut quibusdam fugiat corporis, dignissimos tenetur,
-				mollitia cumque. Velit.
-			</p>
-			<h3>Themeable</h3>
-			<p>
-				Lorem ipsum dolor sit amet consectetur adipisicing elit. Est dolorem
-				tempore odio! Nemo consectetur ipsa aperiam similique maxime maiores
-				consequatur explicabo ut quibusdam fugiat corporis, dignissimos tenetur,
-				mollitia cumque. Velit.
-			</p>
-		</div>
-		<picture slot="image-container">
-			<img
-				src="/assets/images/landing-1/landing-sticky.jpg"
-				alt="Astro Odyssey"
-				loading="lazy"
-			/>
-		</picture>
-	</StickyTextImageSection>
+    <!--<YouTubeEmbedSection url="https://youtu.be/Ip6cw8gfHHI?si=em5oMDFtIkcyvhxv" rounded/>-->
 
-	<CtaCardSection background="var(--theme-surface-2)" color="var(--theme-on-surface-2)">
-		<h2>Start Your Website Today</h2>
-		<p>It only takes a couple clicks to have a new, modern website for your business or startup.</p>
-		<Button href="/theme/get-started" customIcon>Get Started <Fragment slot="icon">
-			<Icon name="ic:baseline-chevron-right"/>
-		</Fragment></Button>
-	</CtaCardSection>
-
+    <CtaCardSection background="var(--theme-surface-2)" color="var(--theme-on-surface-2)">
+        <h2>Bắt đầu mua hàng ngay trong hôm nay </h2>
+        <p>Đừng để thời gian trôi qua, hãy khám phá ngay các sản phẩm chất lượng và dịch vụ tốt nhất tại Cửa hàng VLXD
+            Thành Nam.</p>
+        <Button href="/contact" customIcon>Liên hệ mua hàng
+            <Fragment slot="icon">
+                <Icon name="ic:baseline-chevron-right"/>
+            </Fragment>
+        </Button>
+    </CtaCardSection>
 </Layout>
 

@@ -5,14 +5,14 @@ const {narrow} = Astro.props;
 ---
 
 <Container narrow={narrow}>
-  <section class="text__section">
-    <slot></slot>
-  </section>
+    <section class="text__section">
+        <slot></slot>
+    </section>
 </Container>
 
 <style>
-  .text__section {
-    margin: var(--section-margin) auto;
-  }
+    .text__section {
+        margin: var(--section-margin) auto;
+    }
 </style>
 
