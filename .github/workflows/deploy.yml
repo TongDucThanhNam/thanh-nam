@@ -25,7 +25,7 @@ jobs:
         uses: withastro/action@v1
         with:
           node-version: 20
-          package-manager: npm
+          package-manager: npm@18.14.1
 
   deploy:
     needs: build
