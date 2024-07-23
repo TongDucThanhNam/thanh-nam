@@ -1,9 +1,14 @@
 ---
+import { getImage } from 'astro:assets'
 interface Props {
     title: string;
 }
+import faviconSrc from '../images/favicon.png'
+// import faviconSvgSrc from '../images/favicon.svg'
+import faviconSvgSrc from '../../public/favicon.svg'
 
 const {title} = Astro.props;
+const faviconSvg = await getImage({ src: faviconSvgSrc, format: 'svg' })
 ---
 
 <!doctype html>
@@ -12,7 +17,8 @@ const {title} = Astro.props;
     <meta charset="UTF-8"/>
     <meta name="description" content="Astro description"/>
     <meta name="viewport" content="width=device-width"/>
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg"/>
+    <link rel="icon" href="/favicon.ico" sizes="32x32" />
+    <link rel="icon" href="../../public/favicon.svg" type="image/svg+xml" />
     <meta name="generator" content={Astro.generator}/>
     <title>{title}</title>
 </head>
