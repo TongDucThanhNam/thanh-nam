@@ -1,4 +1,7 @@
 ---
+import { Image } from 'astro:assets';
+import thanhnamImage from '../../src/assets/thanhnam.jpg';
+
 import {Icon} from 'astro-icon'
 import {
     AnnouncementBar,
@@ -35,12 +38,18 @@ const seo = {
             >
         </div>
         <picture slot="image-container">
-            <img
-                    src="/assets/images/landing-1/thanhnam.jpg"
-                    alt="Astro Odyssee"
-                    id="home-hero-image"
-            />
+            <!--<img-->
+            <!--        src="/assets/images/landing-1/thanhnam.jpg"-->
+            <!--        alt="Astro Odyssee"-->
+            <!--        id="home-hero-image"-->
+            <!--/>-->
+            <Image
+                    width="690"
+                    height="388.13"
+                    src={thanhnamImage} alt="A bird sitting on a nest of eggs." />
+
         </picture>
+
     </TextAndImageHero>
 
     <CustomerQuoteSection

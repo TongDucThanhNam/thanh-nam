@@ -13,7 +13,10 @@
     "@astrojs/lit": "^4.0.0",
     "@astrojs/mdx": "^2.0.2",
     "@astrojs/sitemap": "^3.0.3",
-    "astro": "^4.0.7"
+    "astro": "^4.0.7",
+    "firebase": "^10.12.4",
+    "firebase-tools": "^13.13.3",
+    "login": "^0.8.0"
   },
   "devDependencies": {
     "@littlesticks/odyssey-theme-components": "^0.0.23"

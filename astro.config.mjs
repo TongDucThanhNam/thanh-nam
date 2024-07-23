@@ -6,7 +6,7 @@ import lit from "@astrojs/lit";
 
 // https://astro.build/config
 export default defineConfig({
-    site: 'https://TongDucThanhNam.github.io', // Your website URL https://<username>.github.io
+    site: 'https://chvlxd-thanh-nam.web.app/', // Your website URL https://<username>.github.io
     // base: '/thanh-nam/', // Your respository name, e.g. "/my-site"
     sitemap: true,
     // Generate sitemap (set to "false" to disable)
