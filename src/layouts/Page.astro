@@ -17,11 +17,13 @@ const {seo} = Astro.props as Props;
 ---
 
 <Layout seo={seo}>
-    <Header rightMenu navData={nav} slot="header">
+    <Header
+            background="var(--theme-surface-1)"
+            color="var(--theme-on-surface-1)"
+            rightMenu navData={nav} slot="header">
 		<span slot="logo">
 			<Logo/>
 		</span>
-        <Button slot="action-item" href="/theme/get-started">Get Started</Button>
     </Header>
     <div id="page">
         <slot/>
