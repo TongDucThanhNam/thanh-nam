@@ -42,4 +42,5 @@ links below.
 | [TextCardSection](sections/TextCardSection.astro)               |
 | [TextSection](sections/TextSection.astro)                       |
 | [ThreeColumnTextSection](sections/ThreeColumnTextSection.astro) |
-| [YouTubeEmbedSection](sections/YouTubeEmbedSection.astro)       |
+
+[//]: # (| [YouTubeEmbedSection]&#40;sections/YouTubeEmbedSection.astro&#41;       |)
