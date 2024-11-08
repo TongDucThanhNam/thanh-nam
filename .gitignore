@@ -28,3 +28,5 @@ pnpm-debug.log*
 firebase.json
 bun.lockb
 package-lock.json
+
+.astro

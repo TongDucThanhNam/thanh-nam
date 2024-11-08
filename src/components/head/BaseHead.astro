@@ -35,7 +35,20 @@ const image = new URL(Astro.props.image || './social.png', Astro.site);
 <meta property="og:description" content={description}/>
 <meta property="og:image" content={image}/>
 
+<meta name="google-site-verification" content="sMzd50Kugr7VsbbgdCEW6YHA3jn2z4ILVk-gdq8gnTY" />
+
 <!-- Google Analytics -->
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-SE364ZQ94C">
+</script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-SE364ZQ94C');
+</script>
+
 <script>
     var host = window.location.hostname;
     if (host != 'localhost') {
